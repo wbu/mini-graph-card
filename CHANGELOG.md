@@ -1,3 +1,54 @@
+# 1.0.0 (2025-11-15)
+
+
+### Bug Fixes
+
+* adapt state color to tooltip properties ([#1214](https://github.com/wbu/mini-graph-card/issues/1214)) ([1142f25](https://github.com/wbu/mini-graph-card/commit/1142f259b168ddc936e7060c6cffabc4e89dc8bf))
+* add first datapoint tooltip for line graph ([#882](https://github.com/wbu/mini-graph-card/issues/882)) ([7576fe6](https://github.com/wbu/mini-graph-card/commit/7576fe6460803546936c18fcadebf86a63c9ebfa))
+* allow zero tooltip ([057a395](https://github.com/wbu/mini-graph-card/commit/057a395ecbf8cfeb92ffa2805f1f8204778d7948)), closes [#805](https://github.com/wbu/mini-graph-card/issues/805)
+* cards would always assume icon_image was set ([#957](https://github.com/wbu/mini-graph-card/issues/957)) ([f376732](https://github.com/wbu/mini-graph-card/commit/f376732f0a82251e3c66aa22500b377d1c7ef9b8))
+* computeUom() for attribute & empty unit ([#1236](https://github.com/wbu/mini-graph-card/issues/1236)) ([436b9a9](https://github.com/wbu/mini-graph-card/commit/436b9a94f3b16f60fa39bcce5163ee07038c7e22))
+* deprecated paper-item-icon-color ([#1247](https://github.com/wbu/mini-graph-card/issues/1247)) ([2e99db5](https://github.com/wbu/mini-graph-card/commit/2e99db5e97adc8c7836258020007cf0bc6cd3bdd))
+* display a warning if entity is not available ([#545](https://github.com/wbu/mini-graph-card/issues/545)) ([a334b84](https://github.com/wbu/mini-graph-card/commit/a334b84f6c76a75d3af212ec18c7a423b2a2c022)), closes [#487](https://github.com/wbu/mini-graph-card/issues/487)
+* drop out-of-bound coords in reducer ([#881](https://github.com/wbu/mini-graph-card/issues/881)) ([527f005](https://github.com/wbu/mini-graph-card/commit/527f005c902be8a9d572aabcb82993dfedd73572)), closes [#251](https://github.com/wbu/mini-graph-card/issues/251)
+* Fix undefined variable introduced by [#545](https://github.com/wbu/mini-graph-card/issues/545) ([9e923f5](https://github.com/wbu/mini-graph-card/commit/9e923f55af19e0dcacf58ec3c5e38ae085c144ec))
+* hide graph loading indicator when appropriate ([#1197](https://github.com/wbu/mini-graph-card/issues/1197)) ([d708d6a](https://github.com/wbu/mini-graph-card/commit/d708d6a22f1531681855a1b852f2f7ee7cfc07ba))
+* icon will properly follow entity's device_class [[#484](https://github.com/wbu/mini-graph-card/issues/484)] ([2f9e0a7](https://github.com/wbu/mini-graph-card/commit/2f9e0a75c10d6df932025df1e39faffd5f7992a7))
+* indicator style for the 1st state ([#1105](https://github.com/wbu/mini-graph-card/issues/1105)) ([c0ad333](https://github.com/wbu/mini-graph-card/commit/c0ad333ee96998bab7179b23b86684ba74851326))
+* legend indicators respect entity attribute configuration ([#1115](https://github.com/wbu/mini-graph-card/issues/1115)) ([5fe01d1](https://github.com/wbu/mini-graph-card/commit/5fe01d15a791d09646fd26cce5c8d7113e0cd4b7))
+* legend unit percent w/o whitespace ([#1191](https://github.com/wbu/mini-graph-card/issues/1191)) ([9f5cfd9](https://github.com/wbu/mini-graph-card/commit/9f5cfd9c86e1d05bbaa14691fbaa77bceb63144a))
+* migrate to ha-spinner  ([#1234](https://github.com/wbu/mini-graph-card/issues/1234)) ([d68f651](https://github.com/wbu/mini-graph-card/commit/d68f651af0899b37a78ec9f58ac0a030231c14bd))
+* more intuitive min_bound_range behavior ([#1136](https://github.com/wbu/mini-graph-card/issues/1136)) ([54d9875](https://github.com/wbu/mini-graph-card/commit/54d987568b850451e0b6009d3d002526bb1f5b13))
+* name and icon color respect attribute choice ([#1131](https://github.com/wbu/mini-graph-card/issues/1131)) ([cbfba7a](https://github.com/wbu/mini-graph-card/commit/cbfba7a6a4a02e944d82d83fca69f61148cbcd34))
+* padding fill ([#1238](https://github.com/wbu/mini-graph-card/issues/1238)) ([f930fa6](https://github.com/wbu/mini-graph-card/commit/f930fa60dfce7b1003b2ebb64c9ce1673b160c60))
+* process absent UoM in computeLegend() ([#1237](https://github.com/wbu/mini-graph-card/issues/1237)) ([5724cfd](https://github.com/wbu/mini-graph-card/commit/5724cfdd8e73316659d4bd38ee351628f247ae85))
+* remove unused argument from getBoundary ([#1193](https://github.com/wbu/mini-graph-card/issues/1193)) ([f5261d9](https://github.com/wbu/mini-graph-card/commit/f5261d92c37b93f2fd8c7f8da01fe8af4a5a18e8))
+* retain the last out-of-bounds state ([#961](https://github.com/wbu/mini-graph-card/issues/961)) ([8ebe173](https://github.com/wbu/mini-graph-card/commit/8ebe173b8362e41b3287aaf04114d882aae78207)), closes [#881](https://github.com/wbu/mini-graph-card/issues/881) [#960](https://github.com/wbu/mini-graph-card/issues/960)
+* Support for `fire-dom-event` ([c29f55f](https://github.com/wbu/mini-graph-card/commit/c29f55f78b24f8ec2a7f44aae1c40dfe0f837c81)), closes [#563](https://github.com/wbu/mini-graph-card/issues/563)
+* Time would sometime display 24:xx instead of 00:xx [[#536](https://github.com/wbu/mini-graph-card/issues/536)] ([7c7d921](https://github.com/wbu/mini-graph-card/commit/7c7d9210810e3fd8ca4f77b9708a09fadc963a93))
+* tooltip interval start could be after end ([#1065](https://github.com/wbu/mini-graph-card/issues/1065)) ([930ee39](https://github.com/wbu/mini-graph-card/commit/930ee39f51744bc11f580f4198f579b5213371ca)), closes [#181](https://github.com/wbu/mini-graph-card/issues/181)
+* use a proper config in renderState() ([#1217](https://github.com/wbu/mini-graph-card/issues/1217)) ([c980460](https://github.com/wbu/mini-graph-card/commit/c9804600989bd9d3c5868e0312479a26330ac7f2))
+* use d3 to interpolate colors ([#1118](https://github.com/wbu/mini-graph-card/issues/1118)) ([b8676f5](https://github.com/wbu/mini-graph-card/commit/b8676f557107fb5ebda550652a947fa74ab39a9c))
+* **config:** Remove entity config error [#592](https://github.com/wbu/mini-graph-card/issues/592) ([#593](https://github.com/wbu/mini-graph-card/issues/593)) ([53d923a](https://github.com/wbu/mini-graph-card/commit/53d923a8d4979169cb48073d4ac0f595fc80e6a7))
+* **documentation:** enquote html color ([dbdeab8](https://github.com/wbu/mini-graph-card/commit/dbdeab86f987d74583fea37f57b0499bf474639f)), closes [#872](https://github.com/wbu/mini-graph-card/issues/872)
+* **log:** color_thresholds render incorectly with logaritmic on ([#542](https://github.com/wbu/mini-graph-card/issues/542)) ([b704885](https://github.com/wbu/mini-graph-card/commit/b704885746f6ead103e5b4285cd6554bb4ba7554)), closes [#531](https://github.com/wbu/mini-graph-card/issues/531)
+* **stalebot:** issues should also use exemptLabels ([4d74c1f](https://github.com/wbu/mini-graph-card/commit/4d74c1f103af7c830291c2c85a505adba9a9f4f9))
+* **workflows:** remove invalid description field ([e755e24](https://github.com/wbu/mini-graph-card/commit/e755e24efe37d53d8ba02852f2ba23ed8444f1da))
+
+
+### Features
+
+* add "tooltip--label" class ([#1202](https://github.com/wbu/mini-graph-card/issues/1202)) ([0d3c184](https://github.com/wbu/mini-graph-card/commit/0d3c184dc19c43dd2c0797f3f7d25b6aaac014e4))
+* Add loader ([#1180](https://github.com/wbu/mini-graph-card/issues/1180)) ([30c5263](https://github.com/wbu/mini-graph-card/commit/30c5263a30dfd2ebde6b4d1a4969696073c20482))
+* add show_legend_state ([#1173](https://github.com/wbu/mini-graph-card/issues/1173)) ([3b1c827](https://github.com/wbu/mini-graph-card/commit/3b1c82793a01baf613dfae4ad4bfa981a29b999f))
+* Add support of attribute tree when available ([#996](https://github.com/wbu/mini-graph-card/issues/996)) ([9c1c31e](https://github.com/wbu/mini-graph-card/commit/9c1c31eaef3b81f45374441823a40b8f06196fc7))
+* Format numbers according to selected language [[#495](https://github.com/wbu/mini-graph-card/issues/495) [#509](https://github.com/wbu/mini-graph-card/issues/509)] ([5785bd8](https://github.com/wbu/mini-graph-card/commit/5785bd8a9c1912ef22a8e70abab7c4b5e00abe74))
+* pull two years worth of changes into release channel ([f5fb98d](https://github.com/wbu/mini-graph-card/commit/f5fb98d9abc6a350151efef952a52d9d717a1d76)), closes [#1059](https://github.com/wbu/mini-graph-card/issues/1059)
+* **attribute:** Retrieve an attribute instead of the state ([#564](https://github.com/wbu/mini-graph-card/issues/564)) ([708bfde](https://github.com/wbu/mini-graph-card/commit/708bfde41dffafcef5378da4365ef394b533d6c7)), closes [#411](https://github.com/wbu/mini-graph-card/issues/411) [#245](https://github.com/wbu/mini-graph-card/issues/245) [#501](https://github.com/wbu/mini-graph-card/issues/501)
+* **graph:** Add median aggregate function ([#521](https://github.com/wbu/mini-graph-card/issues/521)) ([57219bd](https://github.com/wbu/mini-graph-card/commit/57219bd928006286d38ff7628454af36db6c6349))
+* **option:** override icon with an image URL ([#789](https://github.com/wbu/mini-graph-card/issues/789)) ([2860a09](https://github.com/wbu/mini-graph-card/commit/2860a094e782d8af3c80c46b56aa80e079b9755b))
+* Interpolate color threshold stops ([#596](https://github.com/wbu/mini-graph-card/issues/596)) ([3826c0d](https://github.com/wbu/mini-graph-card/commit/3826c0dd7e647792ac01fae47a9b057deefad337))
+
 # [0.13.0](https://github.com/kalkih/mini-graph-card/compare/v0.12.1...v0.13.0) (2025-05-29)
 
 
